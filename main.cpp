@@ -14,4 +14,12 @@ using namespace std;
 
 //Loop through each city:
 
-//
+int main() {
+
+    //Map needs to be declared here
+
+    //I want to open the file in main
+    // and then check if it exist/can be found
+
+    return 0;
+}
