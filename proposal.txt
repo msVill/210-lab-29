@@ -1,0 +1,26 @@
+Project Overview:
+My program will simulate changes that cities go through over a 
+50-year time period. The simulation will depict the impact of job
+availability, housing conditions, and population trends within three
+different cities in the same state.
+
+Implementation:
+I will use an std::mao where each key represents a city name. The value
+will be a 3-element std::array of std::list. These three lists will
+represent:
+- Job availability
+- Housing conditions
+- Population increase or decrease.
+The program will read at least 100 lines of data from an external file
+to initialize the map. Each line will contain a city name, a category
+(job, housing, or population), and a value, which will be inserted into
+the appropriate list.
+
+Simulated Events:
+The simulation will run 50 time periods (years). During each time
+period:
+- Population may increase/decrease in each city.
+- Job availability may improve or decline, affecting economic conditions
+- Housing availability may increase or decrease, influencing affordability
+and potential homelessness.
+These changes may also indirectly affect crime rates within each city.
