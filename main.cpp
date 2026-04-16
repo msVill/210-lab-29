@@ -22,6 +22,12 @@ void runSimulation(map<string, array<list<string>, 3>>& cities, int timePeriods)
             auto& jobs = city.second[0];
             auto& housing = city.second[1];
             auto& population = city.second[2];
+
+            //still in the loop, the program needs to randomly decide to
+            // add/remove job, random add/remove housing, and random
+            // population growth/decline
+
+            cout << "Updating city: " << cityName << endl;
         }
 
 
@@ -49,7 +55,24 @@ int main() {
     // parse city, category, value
     // insert into correct list in map
 
+    // temp. data
+    cities["SampleCity"][0].push_back("Engineer"); // jobs
+    cities["SampleCity"][1].push_back("apartment"); // housing
+    cities["SampleCity"][2].push_back("Growth"); // population
+
+    // We need to be able to see what we're starting with
+    cout << "Initial:\n";
+    for(auto& city : cities) {
+        cout << city.first << endl;
+    }
     runSimulation(cities, 50);
 
     return 0;
 }
+
+
+
+
+
+
+//my eyes burn
